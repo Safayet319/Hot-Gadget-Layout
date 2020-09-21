@@ -1,0 +1,364 @@
+%gardient-color{
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffa500+2,ffc913+100 */
+background: rgb(255,165,0); /* Old browsers */
+background: -moz-linear-gradient(-45deg,  rgba(255,165,0,1) 2%, rgba(255,201,19,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  rgba(255,165,0,1) 2%,rgba(255,201,19,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  rgba(255,165,0,1) 2%,rgba(255,201,19,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa500', endColorstr='#ffc913',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+%transition{
+    -webkit-transition: all 0.7s ease;
+    -o-transition: all 0.7s ease ;
+     transition: all 0.7s ease ; 
+    }
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+a{
+    text-decoration: none;
+    
+    &:hover{
+        text-decoration: none;
+        
+    }
+}
+
+nav{
+    padding-top: 50px !important;
+    margin-bottom: 50px;
+   .navbar-brand{}
+   .navbar-nav{
+      .nav-item{
+        .nav-link{
+            color: #0000008c !important;
+            font-size: 25px !important;
+            font-weight: 600 !important;
+            
+            
+        }  
+      } 
+   } 
+}
+
+// ? carousel item
+
+.carousel{
+    .carousel-indicators{
+        top: 98%;
+        .active{
+            width: 50px;
+        }
+        li{
+           @extend %gardient-color;
+          width: 25px;
+          height: 7px;
+          padding: 0;
+          border: 0;
+          border-radius: floor($number: 12px);
+
+        }
+    }
+    .carousel-inner{
+        z-index: 9;
+        .carousel-item{
+            h1{
+                font-size: 60px;
+                font-weight: 600;
+            }
+            p{
+                font-size: 24px;
+                color: #333;
+                opacity: 0.7;
+            }
+        }
+        .container{
+            .row{
+                .col{
+                    h1{}
+                    p{}
+                    a{}
+                    .img-edit{
+                      width: 650px; 
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+.btn-dark{
+    background-color:#000 ;
+    font-size: 15px;
+    padding: 9px;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    @extend %transition;
+    &:hover{
+        background-color: #FFB107;
+        border: 0;
+        
+    }
+
+    img{
+
+    }
+}
+
+.featured-product{
+    padding: 100px 0 50px;
+    .nav{
+        padding-bottom: 40px;
+            li{
+                h1{
+                    font-size: 23px;
+                    font-weight: 700;
+                }
+                
+               a{
+                color: #FFB107 !important;
+                text-decoration: none !important;
+                font-size: 20px !important;
+                font-weight: 600;
+
+           
+               }
+           }
+     
+        
+    }    
+   .product{
+      box-shadow: 0 20px 50px #0000000f;
+      padding: 20px 10px;
+      text-align: center;
+      border-radius: 10px;  
+      margin: 10px 0;
+       
+        a{
+            text-decoration: none;
+            img{}
+            h1{
+                font-size: 30px;
+                font-weight: 600;
+                color: #333;
+                margin-top: 20px;
+
+            }
+        }
+        h2{
+            font-size: 26px;
+            font-weight: 500;
+            color: #333333bf;
+        }
+
+   }
+
+}
+
+
+.product-category{
+    h1{
+        font-size: 35px;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 11px;
+    }
+    span{
+        @extend %gardient-color;
+        width: 129px;
+        height: 12px;
+        display: block;
+        margin: auto;
+        margin-bottom: 50px;
+        border-radius: 8px;
+    }
+    .radius-1{
+        a{
+            display: block;
+            box-shadow: 0 0 30px #00000024;
+            text-align: center;
+            padding: 25px 0;
+            // border-radius: 15px;
+            border-radius: 30px 0 30px 0;
+        -webkit-border-radius: 30px 0 30px 0;
+        -moz-border-radius: 30px 0 30px 0;
+        -ms-border-radius: 30px 0 30px 0;
+        -o-border-radius: 30px 0 30px 0;
+            margin-bottom: 15px;
+            
+            font-size: 26px;
+            // #00000024
+    
+            img{}
+            h3{
+                color: #333;
+                font-weight: 600;
+                margin-top: 20px;
+            }
+        }
+    }
+    .radius-2{
+        a{
+            display: block;
+            box-shadow: 0 0 30px #00000024;
+            text-align: center;
+            padding: 25px 0;
+            // border-radius: 15px;
+            border-radius: 0 30px 0 30px;
+            -webkit-border-radius: 0 30px 0 30px;
+            -moz-border-radius: 0 30px 0 30px;
+            -ms-border-radius: 0 30px 0 30px;
+            -o-border-radius: 0 30px 0 30px;
+            margin-bottom: 15px;
+            
+            font-size: 26px;
+            // #00000024
+    
+            img{}
+            h3{
+                color: #333;
+                font-weight: 600;
+                margin-top: 20px;
+            }
+        }
+    }
+
+    
+}
+
+.footer{
+    margin: 60px 0;
+    .container{
+        .row{
+            p{
+                font-size: 15px;
+                font-weight: 600;
+                letter-spacing: 1.5px;
+                span{
+                    color: #FFB107;
+                    letter-spacing: 0;
+                }
+            }
+        }
+    }
+}
+
+
+
+#particles-js{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+
+// media query
+
+@media(max-width: 1199px){
+    nav .navbar-nav .nav-item .nav-link {
+        
+        font-size: 19px !important;
+        font-weight: 600 !important;
+    }
+    nav .navbar-brand .img-size{
+        width: 150px !important;
+    }
+
+    .carousel .carousel-inner .carousel-item h1 {
+        font-size: 45px;
+        font-weight: 600;
+    }
+    .carousel .carousel-inner .container .row .col .img-edit {
+        width: 335px;
+    }
+    .carousel .carousel-inner .carousel-item p {
+        font-size: 19px;
+        
+        opacity: 0.7;
+    }
+    .featured-product .product .product-image{
+        width: 200px;
+    }
+    .featured-product .product a h1 {
+        font-size: 25px !important;
+    }
+    .featured-product .product h2 {
+        font-size: 22px !important;
+    }
+    .product-category h1 {
+        font-size: 30px;
+    }
+    .product-category span {
+        width: 100px;
+        height: 4px;
+        display: block;
+        margin: auto;
+        margin-bottom: 50px;
+        border-radius: 13px
+    }
+    .product-category h1 {
+        font-size: 30px
+    }
+
+}
+@media(max-width: 991px)
+{
+    nav .navbar-nav .nav-item .nav-link {
+        font-size: 19px !important;
+        font-weight: 600 !important;
+        padding-right: 28px;
+    }
+    nav .navbar-brand .img-size {
+        width: 120px !important;
+    }
+
+    .navbar-nav {
+        display: flex;
+        flex-direction: row;
+        /* padding-left: 22px; */
+        margin-bottom: 0;
+        list-style: none;
+        justify-content: f;
+        justify-content: center;
+    }
+    .carousel .carousel-inner .carousel-item h1 {
+        font-size: 35px;
+        font-weight: 600;
+    }
+
+    .carousel .carousel-inner .carousel-item p {
+        font-size: 16px;
+        opacity: 0.7;
+    }
+
+    .btn-dark {
+        
+        font-size: 13px;
+        padding: 9px;
+        border-radius: 10px;
+        letter-spacing: 1px;
+    }
+}
+@media(max-width: 767px){
+    .carousel .carousel-inner .carousel-item h1 {
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .carousel .carousel-inner .carousel-item p {
+        font-size: 13px;
+        opacity: 0.7;
+    }
+}
+@media(max-width: 575px){
+    nav .navbar-nav .nav-item .nav-link {
+        font-size: 15px !important;
+        font-weight: 600 !important;
+        padding-right: 28px;
+}
+}
+
